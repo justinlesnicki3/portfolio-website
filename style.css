@@ -1,0 +1,147 @@
+:root {
+    
+    --peach-navBar: #D18E95;
+    --purple-projectBackground: #7D6F93;
+    --orange-educationBackground: #CC8184;
+    --purple-socialsBackground: #A97B95;
+
+}
+
+.name {
+    
+    padding-left: 250px;
+    text-decoration: none;
+    display: inline; 
+    margin-right: 20px; 
+    justify-content: center;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    position: relative;
+    top: 36px; /* Moves the text lower */
+    
+}
+
+
+ul {
+    text-decoration: none;
+    list-style-type: none; /* Removes default bullet points */
+    margin: 0;
+    padding-right: 250px;
+    display: flex;
+    justify-content: right;
+}
+
+li {
+
+    text-decoration: none;
+    display: inline; /* Makes the list items align horizontally */
+    margin-right: 20px; /* Adds space between items */
+    justify-content: center;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    
+}
+
+li a {
+    text-decoration: none; /* Removes the underline from links */
+    color: inherit; /* Ensures links inherit the color of the parent li */
+}
+
+li a:hover {
+    color: #D18E95; /* Changes color on hover */
+    transition: color 0.3s ease;
+}
+
+
+h1 {
+
+color: #FFF;
+font-family: Inter;
+font-size: 128px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+text-align: center;
+
+}
+
+p {
+color: #FFF;
+font-family: Inter;
+font-size: 32px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-align: center;
+margin-top: -80px; /* Pulls the text upwards */
+}
+
+
+
+.background {
+    background-size: cover; /* Ensures the image covers the entire container */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center; /* Centers the image */
+    width: 100vw; /* Sets the width to the full viewport width */
+    height: 100vh; /* Sets the height to the full viewport height */
+}
+
+
+.button-container {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-align: center;
+    text-decoration: none;
+
+}
+
+.btn-Resume {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-align: center;
+    text-decoration: none; /* Removes underline */
+    padding: 10px 20px; /* Adds padding for better click area */
+    opacity: 0.8;
+    background: #E69180;
+    border-radius: 30px; /* Rounds the corners */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+.btn-Contact {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-align: center;
+    text-decoration: none; /* Removes underline */
+    padding: 10px 20px; /* Adds padding for better click area */
+    opacity: 0.8;
+    background: #8e809a;
+    border-radius: 30px; /* Rounds the corners */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.btn-Resume:hover,
+.btn-Contact:hover {
+    background-color: #6F443F; /* Slightly darker shade on hover */
+}
+
+
+

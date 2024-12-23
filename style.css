@@ -146,7 +146,7 @@ margin-top: -80px; /* Pulls the text upwards */
 }
 
 .section {
-    height: 90vh; /* Make each section cover the full viewport height */
+    height: 190vh; /* Make each section cover the full viewport height */
     padding-top: 100px; /* Remove the padding that reduces usable space */
     display: flex; /* Flexbox for alignment */
     justify-content: center; /* Centers content horizontally */
@@ -157,19 +157,49 @@ margin-top: -80px; /* Pulls the text upwards */
 
 #section3 {
     background-color: #7D6F93; /* Background color for Section 3 */
-    margin-top: 10; /* Removes unnecessary margin that might create gaps */
+    margin-top: 500px; /* Removes unnecessary margin that might create gaps */
     color: #fff;
+    height: 99vh;
     font-size: 10px;
 }
 
 #section3 h1 {
     font-size: 48px; /* Adjusts the font size */
-    color: #FFD700; /* Changes the text color */
-    font-family: 'Arial', sans-serif; /* Specifies the font */
+    color: #fff; /* Changes the text color */
+    font-family: Inter; /* Specifies the font */
     margin-bottom: 20px; /* Adds space below the heading */
     text-transform: uppercase; /* Makes the text uppercase */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds a shadow effect */
 }
+
+
+.header-Snake, .header-Portfolio {
+    font-size: 24px; /* Adjust the font size */
+    color: #fff; /* Set the text color */
+}
+
+/* Optional: Add specific styles for each header if needed */
+.header-Snake {
+    font-weight: bold; /* Makes the Snake.io header bold */
+    padding-top: 120px;
+    padding-right: 750px;
+}
+
+.header-Portfolio {
+    font-weight: bold; /* Makes the Portfolio header italic */
+    text-align: right;
+    padding-right: 450px
+
+}
+
+
+
+
+
+
+
+
+
 
 
 

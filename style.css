@@ -276,6 +276,13 @@ margin-top: -80px; /* Pulls the text upwards */
     overflow-wrap: break-word; /* Compatibility for older browsers */
 }
 
+#Skills {
+    background-color: #304594; /* Background color for Section 3 */
+    color: #fff;
+    height: 99vh;
+    font-size: 10px;
+}
+
 
 
 

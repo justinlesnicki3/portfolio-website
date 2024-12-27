@@ -189,7 +189,6 @@ margin-top: -80px; /* Pulls the text upwards */
     font-weight: bold; /* Makes the Portfolio header italic */
     text-align: right;
     padding-right: 450px;
-    padding-top: 25px;
 
 }
 
@@ -197,19 +196,89 @@ margin-top: -80px; /* Pulls the text upwards */
     width: 300px; /* Set the image width */
     height: auto; /* Maintain aspect ratio */
     border-radius: 10px; /* Round the corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow around the image */
     margin-top: 10px; /* Adds space above the image */
     margin-left: 420px;
 }
 
-.section3 img {
-    width: 300px; /* Set the image width */
+.portfolio-display img {
+    width: 450px; /* Set the width */
     height: auto; /* Maintain aspect ratio */
-    border-radius: 10px; /* Round the corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow around the image */
-    margin-top: 10px; /* Adds space above the image */
-    margin-left: 420px;
+    border-radius: 8px; /* Rounded corners */
+    margin: 20px; /* Adds spacing around the image */
+    padding-left: 1100px;
+    margin-top: -1050px; /* Moves the image upwards */
 }
+
+/* Style for the h2 inside portfolio-display */
+.portfolio-display h2 {
+    font-family: inter;
+    font-size: 18px; /* Set smaller font size */
+    font-weight: bold;
+    color: #fff; /* Softer text color */
+    text-align: left; /* Align text to the left */
+    margin-left: 70px;
+}
+
+/* Style the h3 tag in snake-display */
+.snake-diplay h3 {
+    font-family: inter;
+    font-size: 18px; /* Adjust size */
+    color: #fff; /* Set lighter color */
+    font-weight: bold; /* Make text italic */
+    text-align: right; /* Justify the text */
+    margin-right: 90px;
+    
+}
+
+#Education {
+    background-color: #CC8184; /* Background color for Section 3 */
+    color: #fff;
+    height: 99vh;
+    font-size: 10px;
+}
+
+.Education h1 {
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding-top: 125px;
+    padding-left: 700px;
+}
+
+.isu-logo-image {
+    width: 200px;
+    height: auto;
+    position: relative; /* Allows fine control of position */
+    top: -830px; /* Moves the image up */
+    left: 1200px; /* Align horizontally */
+    border-radius: 8px;
+}
+
+.milner-pic {
+    margin-top: -600px;;
+}
+
+.description {
+    font-size: 16px; /* Change to a suitable font size for a paragraph */
+    font-family: 'inter'; /* Set a readable font */
+    line-height: 1.5; /* Adjust line spacing for readability */
+    max-width: 600px; /* Limit the width of the paragraph */
+    margin: 20px auto; /* Center the text and add spacing */
+    margin-top: 150px; /* Adjust this value to move the text downward */
+    color: #fff; /* Set text color */
+    text-align: center; /* Align text to the left */
+    margin-left: 1000px;
+    word-wrap: break-word; /* Ensure long words break properly */
+    overflow-wrap: break-word; /* Compatibility for older browsers */
+}
+
+
+
+
 
 
 

@@ -334,6 +334,68 @@ margin-top: -80px; /* Pulls the text upwards */
     padding-left: 375px;
 }
 
+.Socials {
+    background-color: #A97B95; /* Background color for Section 3 */
+    color: #fff;
+    height: 30vh;
+}
+
+.Socials-header {
+    font-size: 72px;
+}
+
+.Email-icon {
+    mix-blend-mode: multiply; 
+    transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+a:hover .Email-icon {
+    transform: scale(1.1);
+}
+
+.Instagram-icon {
+    mix-blend-mode: multiply; 
+    transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+a:hover .Instagram-icon {
+    transform: scale(1.1);
+}
+
+.Linkedin-icon {
+    mix-blend-mode: darken; 
+    transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+a:hover .Linkedin-icon {
+    transform: scale(1.1);
+}
+
+.Github-icon {
+    mix-blend-mode: darken; 
+    transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+a:hover .Github-icon {
+    transform: scale(1.1);
+}
+
+.Socials {
+    display: flex; /* Enables Flexbox layout */
+    justify-content: center; /* Centers the icons horizontally */
+    align-items: center; /* Aligns icons vertically */
+    gap: 20px; /* Adds spacing between the icons */
+    margin-top: 20px; /* Adjusts spacing above the section */
+}
+
+.Socials img {
+    width: 150px; /* Adjust the size of the icons */
+    height: auto; /* Maintains the aspect ratio */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+
+
 
 
 

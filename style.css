@@ -15,6 +15,10 @@ body {
     background-size: cover;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .name {
     
     padding-left: 250px;
@@ -145,6 +149,11 @@ margin-top: -80px; /* Pulls the text upwards */
     background-color: #6F443F; /* Slightly darker shade on hover */
 }
 
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
 .section {
     height: 190vh; /* Make each section cover the full viewport height */
     padding-top: 100px; /* Remove the padding that reduces usable space */
@@ -160,7 +169,9 @@ margin-top: -80px; /* Pulls the text upwards */
     margin-top: 500px; /* Removes unnecessary margin that might create gaps */
     color: #fff;
     height: 99vh;
+    width: 100%;
     font-size: 10px;
+    
 }
 
 #section3 h1 {

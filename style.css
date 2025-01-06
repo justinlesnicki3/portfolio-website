@@ -183,60 +183,86 @@ body, html {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds a shadow effect */
 }
 
+.section3 h2 {
+    font-size: 18px; /* Set font size for h2 */
+    color: #ffffff; /* Set text color */
+    margin-top: 15px; /* Space above the h2 */
+    margin-bottom: 10px; /* Space below the h2 */
+    text-align: left; /* Center the text */
+    line-height: 1.5; /* Set line height for readability */
+    margin-left: 40px;
+}
+
+.section3 h3 {
+    font-size: 18px; /* Set font size for h2 */
+    color: #ffffff; /* Set text color */
+    margin-top: 15px; /* Space above the h2 */
+    margin-bottom: 10px; /* Space below the h2 */
+    text-align: right; /* Center the text */
+    line-height: 1.5; /* Set line height for readability */
+}
+
 
 .header-Snake, .header-Portfolio {
     font-size: 24px; /* Adjust the font size */
     color: #fff; /* Set the text color */
 }
 
-/* Optional: Add specific styles for each header if needed */
-.header-Snake {
-    font-weight: bold; /* Makes the Snake.io header bold */
-    padding-top: 120px;
-    padding-right: 750px;
+.snake-diplay {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center the items horizontally */
+    text-align: center; /* Center the text */
+    gap: 10px; /* Add space between the header and the image */
 }
 
-.header-Portfolio {
+/* Optional: Add specific styles for each header if needed */
+.header-Snake {
+    font-size: 1.5rem; /* Adjust the font size */
+    font-weight: bold; /* Make the header stand out */
+    margin: 0; /* Remove any default margin */
+    padding: 10px; /* Optional: Add padding for spacing around the text */
+    text-align: left;
+}
+
+.header-portfolio {
     font-weight: bold; /* Makes the Portfolio header italic */
     text-align: right;
     padding-right: 450px;
-
 }
 
-.section3 img {
-    width: 300px; /* Set the image width */
+
+
+.snake-image {
+    width: 100%; /* Adjust the width to fit the container or a specific size */
+    max-width: 200px; /* Set a max width to prevent it from becoming too large */
     height: auto; /* Maintain aspect ratio */
-    border-radius: 10px; /* Round the corners */
-    margin-top: 10px; /* Adds space above the image */
-    margin-left: 420px;
+    display: block; /* Make it a block element to center it */
+    border-radius: 10px; /* Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+    transition: transform 0.3s ease; /* Add a transition for smooth interactions */
+    
 }
 
-.portfolio-display img {
-    width: 450px; /* Set the width */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 8px; /* Rounded corners */
-    margin: 20px; /* Adds spacing around the image */
-    padding-left: 1100px;
-    margin-top: -1050px; /* Moves the image upwards */
+
+
+.snake-display h2 {
+    font-size: 18px; /* Adjusts the font size */
+    color: #ffffff; /* Sets the text color */
+    margin-top: 10px; /* Adds space above the h2 */
+    margin-bottom: 15px; /* Adds space below the h2 */
+    text-align: center; /* Centers the text */
+    line-height: 1.5; /* Increases line height for readability */
 }
 
-/* Style for the h2 inside portfolio-display */
-.portfolio-display h2 {
-    font-family: inter;
-    font-size: 18px; /* Set smaller font size */
-    font-weight: bold;
-    color: #fff; /* Softer text color */
-    text-align: left; /* Align text to the left */
-    margin-left: 70px;
-}
 
 /* Style the h3 tag in snake-display */
-.snake-diplay h3 {
+.snake-diplay {
     font-family: inter;
     font-size: 18px; /* Adjust size */
     color: #fff; /* Set lighter color */
     font-weight: bold; /* Make text italic */
-    text-align: right; /* Justify the text */
+    text-align: left; /* Justify the text */
     margin-right: 90px;
     
 }
@@ -295,18 +321,22 @@ body, html {
 }
 
 .coding-logos {
-    height: 900px;
-    width: 650px;
-    margin-left: 550px;
-    margin-top: -380px;
+    width: 450px; /* Use viewport width for responsive sizing */
+    height: auto; /* Maintain the aspect ratio of the image */
+    display: block; /* Make it a block element for proper centering */
+    align-items: right;
+    padding-left: 900px;
+    margin-top: -700px;
 }
 
+
 .Skills-header {
-    font-size: 72px;
+    font-size: 56px;
     text-align: left;
-    margin-left: 400px;
+    margin-left: 420px;
     padding-top: 50px;
 }
+
 
 .Languages-header {
     font-family: inter;

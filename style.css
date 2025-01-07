@@ -164,17 +164,24 @@ body, html {
     
 }
 
-#section3 {
+#Projects {
     background-color: #7D6F93; /* Background color for Section 3 */
-    margin-top: 500px; /* Removes unnecessary margin that might create gaps */
     color: #fff;
     height: 99vh;
     width: 100%;
     font-size: 10px;
+    margin-top: 250px;
     
 }
 
-#section3 h1 {
+.projects-container {
+    display: flex; /* Arrange items side by side */
+    justify-content: space-between; /* Space out the images */
+    gap: 0px; /* Add space between the projects */
+    flex-wrap: wrap; /* Allow images to wrap on smaller screens */
+}
+
+#Projects h1 {
     font-size: 48px; /* Adjusts the font size */
     color: #fff; /* Changes the text color */
     font-family: Inter; /* Specifies the font */
@@ -183,95 +190,42 @@ body, html {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds a shadow effect */
 }
 
-.section3 h2 {
-    font-size: 18px; /* Set font size for h2 */
-    color: #ffffff; /* Set text color */
-    margin-top: 15px; /* Space above the h2 */
-    margin-bottom: 10px; /* Space below the h2 */
-    text-align: left; /* Center the text */
-    line-height: 1.5; /* Set line height for readability */
-    margin-left: 40px;
+#Projects h2 {
+    font-size: 25px; /* Adjusts the font size */
+    color: #fff; /* Changes the text color */
+    font-family: Inter; /* Specifies the font */
+    margin-bottom: 20px; /* Adds space below the heading */
+    text-transform: uppercase; /* Makes the text uppercase */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds a shadow effect */
 }
 
-.section3 h3 {
-    font-size: 18px; /* Set font size for h2 */
-    color: #ffffff; /* Set text color */
-    margin-top: 15px; /* Space above the h2 */
-    margin-bottom: 10px; /* Space below the h2 */
-    text-align: right; /* Center the text */
-    line-height: 1.5; /* Set line height for readability */
-}
-
-
-.header-Snake, .header-Portfolio {
-    font-size: 24px; /* Adjust the font size */
-    color: #fff; /* Set the text color */
-}
-
-.snake-diplay {
-    display: flex;
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center the items horizontally */
-    text-align: center; /* Center the text */
-    gap: 10px; /* Add space between the header and the image */
-}
-
-/* Optional: Add specific styles for each header if needed */
-.header-Snake {
-    font-size: 1.5rem; /* Adjust the font size */
-    font-weight: bold; /* Make the header stand out */
-    margin: 0; /* Remove any default margin */
-    padding: 10px; /* Optional: Add padding for spacing around the text */
-    text-align: left;
-}
-
-.header-portfolio {
-    font-weight: bold; /* Makes the Portfolio header italic */
-    text-align: right;
-    padding-right: 450px;
-}
-
-
-
-.snake-image {
-    width: 100%; /* Adjust the width to fit the container or a specific size */
-    max-width: 200px; /* Set a max width to prevent it from becoming too large */
-    height: auto; /* Maintain aspect ratio */
-    display: block; /* Make it a block element to center it */
-    border-radius: 10px; /* Add rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
-    transition: transform 0.3s ease; /* Add a transition for smooth interactions */
-    
-}
-
-
-
-.snake-display h2 {
+#Projects h3 {
     font-size: 18px; /* Adjusts the font size */
-    color: #ffffff; /* Sets the text color */
-    margin-top: 10px; /* Adds space above the h2 */
-    margin-bottom: 15px; /* Adds space below the h2 */
-    text-align: center; /* Centers the text */
-    line-height: 1.5; /* Increases line height for readability */
+    color: #fff; /* Changes the text color */
+    font-family: Inter; /* Specifies the font */
+    margin-bottom: 20px; /* Adds space below the heading */
+    font-weight: light;
 }
 
+.portfolio-image, .snake-image {
+    width: 200px;
+    height: auto;
 
-/* Style the h3 tag in snake-display */
-.snake-diplay {
-    font-family: inter;
-    font-size: 18px; /* Adjust size */
-    color: #fff; /* Set lighter color */
-    font-weight: bold; /* Make text italic */
-    text-align: left; /* Justify the text */
-    margin-right: 90px;
-    
 }
+
+.snake-project, .portfolio-project {
+    text-align: center;
+    flex: 1; /* Ensure the items take equal space */
+    max-width: 80%; /* Prevent items from becoming too wide */
+}
+
 
 #Education {
     background-color: #CC8184; /* Background color for Section 3 */
     color: #fff;
     height: 99vh;
     font-size: 10px;
+    flex-direction: column;
 }
 
 .Education h1 {
@@ -282,21 +236,25 @@ body, html {
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    padding-top: 125px;
-    padding-left: 700px;
+    padding-top: 20vh;
+    padding-left: 75vh;
 }
 
 .isu-logo-image {
     width: 200px;
     height: auto;
     position: relative; /* Allows fine control of position */
-    top: -830px; /* Moves the image up */
+    top: -85vh; /* Moves the image up */
     left: 1200px; /* Align horizontally */
     border-radius: 8px;
 }
 
 .milner-pic {
-    margin-top: -600px;;
+    width: 600px;
+    height: auto;
+    margin-top: -20vh;
+    align-items: left;
+    padding-left: 50px;
 }
 
 .description {
@@ -304,13 +262,11 @@ body, html {
     font-family: 'inter'; /* Set a readable font */
     line-height: 1.5; /* Adjust line spacing for readability */
     max-width: 600px; /* Limit the width of the paragraph */
-    margin: 20px auto; /* Center the text and add spacing */
-    margin-top: 150px; /* Adjust this value to move the text downward */
-    color: #fff; /* Set text color */
+    color: #ffffff; /* Set text color */
     text-align: center; /* Align text to the left */
-    margin-left: 1000px;
     word-wrap: break-word; /* Ensure long words break properly */
     overflow-wrap: break-word; /* Compatibility for older browsers */
+    padding-left: 108vh;
 }
 
 #Skills {

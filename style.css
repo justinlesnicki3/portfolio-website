@@ -246,53 +246,70 @@ body, html {
     background-color: #CC8184; /* Background color for Section 3 */
     color: #fff;
     height: 99vh;
+    width: 100%;
     font-size: 10px;
+    display: flex;
     flex-direction: column;
+    justify-content: center;
+    margin: 0; /* Reset margin */
+    align-items: center;
+    padding: 20px; /* Padding for spacing on smaller screens */
+    align-items: center;
+    text-align: center;
 }
 
-
 .education-container {
-    display: flex; /* Arrange items side by side */
-    justify-content: space-between; /* Space out the images */
-    gap: 0px; /* Add space between the projects */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+    text-align: center;
     flex-wrap: wrap; /* Allow images to wrap on smaller screens */
-    align-items: flex-start;
+    gap: 20px; /* Add space between the projects */
+    margin: 0 auto; /* Center the text block */
+    flex: 1; /* Ensure the items take equal space */
+    max-width: 80%; /* Prevent items from becoming too wide */
+    justify-content: center; /* Space out the images */
+
 }
 
 .milner-pic {
-    max-width: 30%;
+    width: 450px;
+    height: auto;
+    max-width: 100%;
+    margin-top: -5vh;
+    align-items: center;
+    padding-right: 4vh;
 }
 
 
-.text-container {
-    display: flex;
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center items horizontally */
-    justify-content: space-between; /* Evenly distribute space between items */
-    text-align: center; /* Center text content */
-    height: 100%; /* Make container height responsive */
-    padding: 20px; /* Optional: Add padding around the content */
-    gap: 20px; /* Adds consistent spacing between each item */
-    width: 700px;
-    padding-right: 35vh;
-    padding-top: 15vh;
+.Education h1 {
+    font-size: 48px; /* Adjusts the font size */
+    color: #fff; /* Changes the text color */
+    font-family: Inter; /* Specifies the font */
+    text-transform: uppercase; /* Makes the text uppercase */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds a shadow effect */
 }
 
- .Education h1 {
-    margin: 0; /* Remove default margin for more precise spacing */
-    font-size: 38px;
-}
-
-.Education h3 {
-    margin: 0; /* Remove default margin */
-    line-height: 1.6; /* Adjust line height for readability */
+.Education h2 {
     font-size: 20px;
-    font-family: inter;
+    text-align: center;
+    font-family: Inter;
+    font-weight: light;
+    width: auto;
+    height: auto;
+    margin-top: -5vh;
+    padding-right: 4vh;
+    text-wrap: wrap;
+    align-items: center;
 }
 
 .isu-logo {
-    max-width: 150px; /* Adjust the width of the logo */
+    max-width: 250px; /* Adjust the width of the logo */
     height: auto; /* Maintain aspect ratio */
+    padding-top: 5vh;
+    align-items: center;
+    padding-right: 2vh;
 }
 
 

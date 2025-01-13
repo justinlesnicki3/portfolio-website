@@ -7,11 +7,108 @@
 
 }
 
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body, html {
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
+    min-height: 100vh;
+}
+
+.header-name {
+    pointer-events: none; /* Makes it non-clickable */
+    font-weight: bolder;
+    font-size: 36px;
+    padding-left: 2vh;
+}
+
+nav {
+    background-color: #8e809a;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+nav li{
+    height: 75px;
+    font-family: inter;
+}
+
+nav a {
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+nav a:hover {
+    background-color: rgba(255, 141, 65, 0.363);
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+
+}
+
+nav li:first-child {
+    margin-right: auto;
+
+
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: #cc818371;
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li {
+    width: 100%;
+}
+
+.sidebar a {
+    width: 100%;
+}
+
+.menu-button{
+    display: none;
+}
+
+@media(max-width: 800px){
+    .hideOnMobile{
+        display: none;
+    }
+
+    .menu-button{
+        display: block;
+    }
+}
+
+@media(max-width: 400px) {
+    .sidebar{
+        width: 100%;
+    }
 }
 
 .hero-section {
@@ -66,39 +163,7 @@ html {
 }
 
 
-ul {
-    text-decoration: none;
-    list-style-type: none; /* Removes default bullet points */
-    margin: 0;
-    padding-right: 250px;
-    display: flex;
-    justify-content: right;
-}
 
-li {
-
-    text-decoration: none;
-    display: inline; /* Makes the list items align horizontally */
-    margin-right: 20px; /* Adds space between items */
-    justify-content: center;
-    color: #FFF;
-    font-family: Inter;
-    font-size: 28px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    
-}
-
-li a {
-    text-decoration: none; /* Removes the underline from links */
-    color: inherit; /* Ensures links inherit the color of the parent li */
-}
-
-li a:hover {
-    color: #D18E95; /* Changes color on hover */
-    transition: color 0.3s ease;
-}
 
 
 h1 {
@@ -277,7 +342,7 @@ body, html {
     width: 450px;
     height: auto;
     max-width: 100%;
-    margin-top: -5vh;
+    margin-top: -10vh;
     align-items: center;
     padding-right: 4vh;
 }
@@ -307,11 +372,25 @@ body, html {
 .isu-logo {
     max-width: 250px; /* Adjust the width of the logo */
     height: auto; /* Maintain aspect ratio */
-    padding-top: 5vh;
     align-items: center;
     padding-right: 2vh;
 }
 
+
+.Skills {
+    background-color: #504266; /* Background color for Section 3 */
+    color: #fff;
+    height: 99vh;
+    font-size: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds a shadow effect */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px; /* Padding for spacing on smaller screens */
+    align-items: center;
+    text-align: center;
+}
 
 #Skills {
     background-color: #504266; /* Background color for Section 3 */
@@ -336,13 +415,15 @@ body, html {
     text-align: left;
     margin-left: 420px;
     padding-top: 50px;
+    margin-bottom: 5vh;
 }
 
 
 .Languages-header {
     font-family: inter;
     font-size: 28px;
-    padding-left: 410px;
+    padding-right: 103vh;
+    
 }
 
 .divider {
@@ -350,6 +431,7 @@ body, html {
     border-top: 2px solid #ffffff; /* Creates a horizontal line */
     width: 500px; /* Adjusts the width of the line */
     margin-left: 230px;
+    margin-top: 1vh;
 }
 
 .Languages-list {
@@ -367,13 +449,15 @@ body, html {
 .Developer-Tools-header {
     font-family: inter;
     font-size: 28px;
-    padding-left: 375px;
+    padding-right: 103vh;
+
 }
 
 .Experience-With-Header {
     font-family: inter;
     font-size: 28px;
-    padding-left: 375px;
+    padding-right: 103vh;
+
 }
 
 .Socials {

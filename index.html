@@ -12,39 +12,38 @@
 
 <body>
 
-    <header class="wrapper">
-        <div>
-            <nav>
-                <div class="name">Justin Lesnicki</div>
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="#">About Me</a></li>
+            <li><a href="#Projects">Projects</a></li>
+            <li><a href="#Education">Education</a></li>
+            <li><a href="#Skills">Skills</a></li>
+            <li><a href="#Socials">Socials</a></li>
+        </ul>
+        <ul>
+            <li class="header-name"><a href="">Justin Lesnicki</a></li>
+            <li class="hideOnMobile"><a href="#">About Me</a></li>
+            <li class="hideOnMobile"><a href="#Projects">Projects</a></li>
+            <li class="hideOnMobile"><a href="#Education">Education</a></li>
+            <li class="hideOnMobile"><a href="#Skills">Skills</a></li>
+            <li class="hideOnMobile"><a href="#Socials">Socials</a></li>
+            <li class="menu-button" onclick=showSideBar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
 
-                <ul>
-                    <li>
-                        <a href="#">Home</a>
-                    </li>
+        </ul>
+    </nav>
 
-                    <li>
-                        <a href="#Projects">Projects</a>
-                    </li>
+    <script>
+        function showSideBar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
 
-                    <li>
-                        <a href="#Education">Education</a>
-                    </li>
-
-                    <li>
-                        <a href="#Skills">Skills</a>
-                    </li>
-
-                    <li>
-                        <a href="#Socials" class="btn dark">Socials</a>
-                    </li>
-                </ul>
-
-            </nav>
-        <!-- End of Desktop Nav Bar -->
-
-        </div>
-
-    </header>
 
     <div class="hero-section">
 
@@ -84,8 +83,6 @@
     <div class="Education" id="Education">
         <h1>Education</h1>
 
-
-            
             <img src="images/milner-exterior-for-news 1.png" alt="Milner" class="milner-pic">
             <h2>Currently I am pursuing a bachelors degree in Information Systems with a focus in Systems Development at Illinois State University. At ISU, I am a member of the Web Development Club where members in similar IT fields gather once a week to work on a project that is aimed to be complete by the end of the semester. Prior to ISU, I attended St. Rita of Cascia High School in Chicago, IL.</h2>
             <img src="PRIMARY_horiz_3C 1.png" alt="Isu" class="isu-logo">

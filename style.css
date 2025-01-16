@@ -121,16 +121,18 @@ nav li:first-child {
     justify-content: center;
     align-items: center;
     text-align: center;
-    
 }
 
 .about-container {
     display: flex;
     flex-direction: column; /* Stack elements vertically */
-    justify-content: center;
     align-items: center;
     text-align: center;
-    width: 1000px;
+    width: 80%; /* Use a percentage to make it responsive */
+    max-width: 1000px; /* Limit the width for larger screens */
+    justify-content: space-between;
+    gap: 20px; /* Add space between the elements */
+    flex-wrap: wrap; /* Allow images and text to wrap on smaller screens */
 }
 
 .about h1 {
@@ -161,6 +163,43 @@ nav li:first-child {
     height: auto;
     border-radius: 55px; /* Round the corners */
 
+}
+
+@media (max-width: 768px) {
+    /* On smaller screens, stack the content */
+    .about-container {
+        width: 90%; /* Ensure it's smaller on mobile */
+        flex-direction: column; /* Stack the image and text */
+    }
+
+    .about h1 {
+        font-size: 32px; /* Adjust header size on smaller screens */
+    }
+
+    .about p {
+        font-size: 16px; /* Adjust paragraph font size */
+    }
+
+    .photo-me {
+        width: 80%; /* Make image size responsive */
+        max-width: 300px; /* Limit the image size on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    /* For very small screens, adjust further */
+    .about h1 {
+        font-size: 28px;
+    }
+
+    .about p {
+        font-size: 14px; /* Smaller text for mobile devices */
+    }
+
+    .photo-me {
+        width: 70%; /* Make the image even smaller on very small screens */
+        max-width: 250px;
+    }
 }
 
 .hero-section {

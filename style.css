@@ -554,11 +554,19 @@ body, html {
 .Socials {
     background-color: #A97B95; /* Background color for Section 3 */
     color: #fff;
-    height: 30vh;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    text-align: center;
 }
 
 .Socials-header {
-    font-size: 72px;
+    font-size: 4vw;
+    margin-bottom: 20px;
 }
 
 .Email-icon {
@@ -606,9 +614,52 @@ a:hover .Github-icon {
 }
 
 .Socials img {
-    width: 150px; /* Adjust the size of the icons */
+    width: 10vw; /* Adjust the size of the icons */
+    max-width: 150px;
     height: auto; /* Maintains the aspect ratio */
     transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+a:hover img {
+    transform: scale(1.1); /* Scale effect on hover */
+}
+
+@media (max-width: 768px) {
+    .Socials {
+        flex-direction: column; /* Stack icons vertically on smaller screens */
+        gap: 10px; /* Reduce gap on smaller screens */
+    }
+
+    .Socials-header {
+        font-size: 6vw; /* Increase font size slightly */
+    }
+
+    .Socials img {
+        width: 20vw; /* Larger width for smaller screens */
+        max-width: 100px; /* Reduce max width for very small screens */
+        transition: transform 0.3s ease; /* Smooth hover effect */
+    }
+
+    .Github-icon {
+        transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+
+    }
+
+    .Linkedin-icon {
+        transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+
+    }
+
+    .Instagram-icon {
+        transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+
+    }
+
+    .Email-icon {
+        transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+
+    }
+
 }
 
 

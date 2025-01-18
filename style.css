@@ -401,9 +401,9 @@ body, html {
 #Education {
     background-color: #CC8184; /* Background color for Section 3 */
     color: #fff;
-    height: 99vh;
+    min-height: 99vh;
     width: 100%;
-    font-size: 10px;
+    font-size: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -412,59 +412,63 @@ body, html {
     padding: 20px; /* Padding for spacing on smaller screens */
     align-items: center;
     text-align: center;
+    box-sizing: border-box;
 }
 
 .education-container {
     display: flex;
-    align-items: center;
     flex-direction: column;
-    height: auto;
-    text-align: center;
-    flex-wrap: wrap; /* Allow images to wrap on smaller screens */
-    gap: 20px; /* Add space between the projects */
-    margin: 0 auto; /* Center the text block */
-    flex: 1; /* Ensure the items take equal space */
-    max-width: 80%; /* Prevent items from becoming too wide */
-    justify-content: center; /* Space out the images */
+    align-items: center;
+    gap: 10px;
+    max-width: 80%;
+    margin: 0 auto;
 
 }
 
 .milner-pic {
-    width: 450px;
-    height: auto;
-    max-width: 100%;
-    margin-top: -10vh;
-    align-items: center;
-    padding-right: 4vh;
+   max-width: 50vh;
+   height: auto;
 }
 
 
 .Education h1 {
-    font-size: 48px; /* Adjusts the font size */
+    font-size: 2.5rem; /* Adjusts the font size */
     color: #fff; /* Changes the text color */
     font-family: Inter; /* Specifies the font */
     text-transform: uppercase; /* Makes the text uppercase */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds a shadow effect */
+    
 }
 
 .Education h2 {
-    font-size: 20px;
-    text-align: center;
-    font-family: Inter;
-    font-weight: light;
-    width: auto;
-    height: auto;
-    margin-top: -5vh;
-    padding-right: 4vh;
-    text-wrap: wrap;
-    align-items: center;
+    font-size: 1.25rem;
+    line-height: 1.6;
+    margin: 10px 0;
+    max-width: 800px;
+    font-family: inter;
+    margin-top: -9vh;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); 
+
 }
 
 .isu-logo {
-    max-width: 250px; /* Adjust the width of the logo */
+    max-width: 70%;
     height: auto; /* Maintain aspect ratio */
-    align-items: center;
-    padding-right: 2vh;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .Education h1 {
+        font-size: 2rem; /* Adjust heading size for smaller screens */
+    }
+
+    .Education h2 {
+        font-size: 1rem; /* Adjust text size for smaller screens */
+    }
+
+    .milner-pic, .isu-logo {
+        width: 100%; /* Ensure images take up full width on small screens */
+    }
 }
 
 

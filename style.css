@@ -67,16 +67,16 @@ nav li:first-child {
 }
 
 .sidebar{
-    position: fixed;
+    position: absolute;
     top: 0;
     right: 0;
-    height: 100vh;
-    width: 250px;
+    height: 100%;
+    width: 100%;
     z-index: 999;
-    background-color: #cc818371;
+    background-color: #cc8183;
     backdrop-filter: blur(10px);
     box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
-    display: none;
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
@@ -84,10 +84,15 @@ nav li:first-child {
 
 .sidebar li {
     width: 100%;
+    text-align: center;
 }
 
 .sidebar a {
-    width: 100%;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    display: block; /* Make links take full width for better centering */
+    padding: 10px;
 }
 
 .menu-button{

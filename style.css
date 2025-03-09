@@ -607,7 +607,7 @@ body, html {
 .Socials {
     background-color: #A97B95; /* Background color for Section 3 */
     color: #fff;
-    height: auto;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;

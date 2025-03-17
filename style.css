@@ -154,7 +154,7 @@ nav li:first-child {
     color: #fff;
     align-items: center;
     margin: 10px 0;
-    font-weight: bold;
+    font-weight: normal;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Adds a shadow effect */
 
 }
@@ -394,7 +394,7 @@ body, html {
     color: #fff; /* Changes the text color */
     font-family: Inter; /* Specifies the font */
     margin-bottom: 20px; /* Adds space below the heading */
-    font-weight: light;
+    font-weight: normal;
 }
 
 .portfolio-image, .snake-image {
@@ -453,13 +453,14 @@ body, html {
 }
 
 .Education h2 {
-    font-size: 1.25rem;
+    font-size: 1.45rem;
     line-height: 1.6;
     margin: 10px 0;
     max-width: 800px;
     font-family: inter;
     margin-top: -9vh;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); 
+    font-weight: normal;
 
 }
 
